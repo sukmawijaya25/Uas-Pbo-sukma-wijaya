@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAS PBO2 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Menghitung Luas dan keliling bangun datar </h1>
+        <table>
+            
+               
+        </table>
+    <p>Pilih menu di bawah untuk menghitung bangun datar  :</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'PersegiPanjang')" id="defaultOpen">Persegi Panjang</button>
+        <button class="tablinks" onclick="openCity(event, 'bujurSangkar')">Bujur Sangkar</button>
+        <button class="tablinks" onclick="openCity(event, 'lingkaran')">Lingkaran</button>
+    </div>
+
+    <div id="persegiPanjang" class="tabcontent">
+        <h2>Hitung Luas Persegi Panjang</h2>
+
+            <form class="inputan_persegi">
+                <label for="panjang">PANJANG :</label>
+                <input type="number" id="panjang" name="" placeholder="Masukan Panjang">
+                <label for="lebar">Lebar :</label>
+                <input type="number" id="lebar" name="lebar" placeholder="Masukan Lebar..">
+                 
+
+            
+                <input class="hitung" type="button" value="Hitung" onclick="hitungLuasDanKelilingPersegiPanjang()">
+                <input class="reset" type="button" value="Reset" onclick="resetForm()">
+
+                <label for="luasBujurSangkar">Luas :</label>
+            <input type="text" id="luasBujurSangkar" name="luasSegitiga" placeholder="0" readonly>
+        
+            <label for="kelilingBujurSangkar">Keliling :</label>
+            <input type="text" id="kelilingBujurSangkar" name="kelilingSegitiga" placeholder="0" readonly>
+          </form>
+
+    </div>
+
+    <div id="lingkaran" class="tabcontent">
+        <h2>Hitung Luas dan Keliling Lingkaran</h2>
+
+        <form class="inputan_Lingkaran">
+            <label for="jari-jari">Jari-jari :</label>
+            <input type="number" id="jari-jari" name="jari-jari" placeholder="Masukan Jari-Jari..">
+        
+            <input type="button" value="Hitung" onclick="hitungLuasDanKelilingLingkaran()">
+            <input type="button" value="Reset" onclick="resetForm()">
+        
+            <label for="luas">Luas :</label>
+            <input type="text" id="luas" name="luas" placeholder="0" readonly>
+        
+            <label for="keliling">Keliling :</label>
+            <input type="text" id="keliling" name="keliling" placeholder="0" readonly>
+        
+          </form>
+    </div>
+
+      
+    <script src="script.js"></script>
+</body>
+</html>
